@@ -3,7 +3,7 @@
 Plugin Name: Visual Form Builder Magic
 Plugin URI: http://james.revillini.com/visual-form-builder-magic/
 Description: Adds a little magic to the Visual Form Builder (non-pro) plugin. Add class "send-to" to any email field to cause the form to be sent to that address as well.
-Version: 1.0
+Version: 1.0.3
 Author: James Revillini
 Author URI: http://james.revillini.com
 License: GPL2
