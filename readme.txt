@@ -38,5 +38,14 @@ I will answer you.
 
 == Changelog ==
 
+= 1.0.3 =
+* Nothing really. Just getting version numbers in sync. It was actually a needless commit. I could have done it in the tag, in retrospect.
+
+= 1.0.2 =
+* Removed hard-coded switch case for form_id. It was totally unnecessary. Thanks Matthew Muro.
+
+= 1.0.1 = 
+* fixed bug in readme
+
 = 1.0 =
 * Initial release which supports mutlitple email recipients based on form input
