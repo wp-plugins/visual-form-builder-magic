@@ -61,15 +61,11 @@ class Visual_Form_Builder_Magic {
 	
 	function vfb_filter_form_settings_mods( $form_settings, $form_id ){
 		global $wpdb;
-		switch (absint($form_id)) {
-			case 5 :
-				$fields = $wpdb->get_results( $wpdb->prepare( "SELECT field_id FROM $this->field_table_name WHERE form_id = %d AND field_css LIKE '%send-to%'", $form_id ) );
-				foreach ($fields as $field) {
-					if ( isset ($_POST[ "vfb-{$field->field_id}" ]) )
-						$form_settings->form_to[] = $_POST[ "vfb-{$field->field_id}" ];
-				}
-				
-				break;
+		
+		$fields = $wpdb->get_results( $wpdb->prepare( "SELECT field_id FROM $this->field_table_name WHERE form_id = %d AND field_css LIKE '%send-to%'", $form_id ) );
+		foreach ($fields as $field) {
+			if ( isset ($_POST[ "vfb-{$field->field_id}" ]) )
+				$form_settings->form_to[] = $_POST[ "vfb-{$field->field_id}" ];
 		}
 		
 		return $form_settings;
