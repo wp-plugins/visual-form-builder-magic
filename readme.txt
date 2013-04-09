@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: visual form builder, email
 Requires at least: 3.5.1
 Tested up to: 3.5.1
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,7 +18,7 @@ This is an add-on plugin which adds some magic to the wonderful Visual Form Buil
 
 = Features =
 
-*   Add the class send-to to any email form input and the submitted information will also get sent to those email addresses.This is the long description.  No limit, and you can use Markdown (as well as in the following sections).
+*   Add the class send-to to any form field's CSS Classes and the submitted information will also get sent to those email addresses.
 
 == Installation ==
 
