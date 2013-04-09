@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: visual form builder, email
 Requires at least: 3.5.1
 Tested up to: 3.5.1
-Stable tag: 1.0.4
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,7 +18,7 @@ This is an add-on plugin which adds some magic to the wonderful Visual Form Buil
 
 = Features =
 
-*   Add the class send-to to any form field's CSS Classes and the submitted information will also get sent to those email addresses.
+*   Add the class send-to to any email form input and the submitted information will also get sent to those email addresses.This is the long description.  No limit, and you can use Markdown (as well as in the following sections).
 
 == Installation ==
 
@@ -37,6 +37,15 @@ I will answer you.
 1. Add the "send-to" class to the CSS Classes field to cause emails to get sent there as well.
 
 == Changelog ==
+
+= 1.0.3 =
+* Nothing really. Just getting version numbers in sync. It was actually a needless commit. I could have done it in the tag, in retrospect.
+
+= 1.0.2 =
+* Removed hard-coded switch case for form_id. It was totally unnecessary. Thanks Matthew Muro.
+
+= 1.0.1 = 
+* fixed bug in readme
 
 = 1.0 =
 * Initial release which supports mutlitple email recipients based on form input
