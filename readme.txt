@@ -38,6 +38,9 @@ I will answer you.
 
 == Changelog ==
 
+= 1.0.4 =
+* BUGFIX bad SQL in SELECT on fields with send-to class
+
 = 1.0.3 =
 * Nothing really. Just getting version numbers in sync. It was actually a needless commit. I could have done it in the tag, in retrospect.
 
