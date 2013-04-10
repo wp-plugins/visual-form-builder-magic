@@ -18,7 +18,7 @@ This is an add-on plugin which adds some magic to the wonderful Visual Form Buil
 
 = Features =
 
-*   Add the class send-to to any email form input and the submitted information will also get sent to those email addresses.This is the long description.  No limit, and you can use Markdown (as well as in the following sections).
+*   Add the class send-to to any email form input and the submitted information will also get sent to those email addresses.
 
 == Installation ==
 
