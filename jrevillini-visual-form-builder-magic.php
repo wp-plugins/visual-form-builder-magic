@@ -3,7 +3,7 @@
 Plugin Name: Visual Form Builder Magic
 Plugin URI: http://james.revillini.com/visual-form-builder-magic/
 Description: Adds a little magic to the Visual Form Builder (non-pro) plugin. Add class "send-to" to any email field to cause the form to be sent to that address as well.
-Version: 1.0.3
+Version: 1.0.4
 Author: James Revillini
 Author URI: http://james.revillini.com
 License: GPL2
@@ -62,8 +62,8 @@ class Visual_Form_Builder_Magic {
 	function vfb_filter_form_settings_mods( $form_settings, $form_id ){
 		global $wpdb;
 		
-		$fields = $wpdb->get_results( $wpdb->prepare( "SELECT field_id FROM $this->field_table_name WHERE form_id = %d AND field_css LIKE '%send-to%'", $form_id ) );
-		foreach ($fields as $field) {
+		$fields = $wpdb->get_results( $wpdb->prepare( "SELECT field_id FROM $this->field_table_name WHERE form_id = %d AND field_css LIKE %s", $form_id, '%send-to%' ) );
+		if (is_array($fields)) foreach ($fields as $field) {
 			if ( isset ($_POST[ "vfb-{$field->field_id}" ]) )
 				$form_settings->form_to[] = $_POST[ "vfb-{$field->field_id}" ];
 		}
